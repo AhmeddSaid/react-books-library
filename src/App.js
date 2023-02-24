@@ -35,9 +35,30 @@ function App() {
 
   return (
     <Routes>
-      <Route exact path={"/"} element={<Home books={books} updateShelf={updateShelf} />} />
-      <Route exact path={"/search"} element={<Search books={books} updateShelf={updateShelf} />} />
-      <Route path="*" element={<NotFound />} />
+      <Route
+        exact
+        path={"/react-books-library/"}
+        element={
+          <Home
+            books={books}
+            updateShelf={updateShelf}
+          />
+        }
+      />
+      <Route
+        exact
+        path={"/react-books-library/search"}
+        element={
+          <Search
+            books={books}
+            updateShelf={updateShelf}
+          />
+        }
+      />
+      <Route
+        path="*"
+        element={<NotFound />}
+      />
     </Routes>
   );
 }
