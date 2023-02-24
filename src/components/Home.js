@@ -46,7 +46,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="open-search">
-        <Link to="/search" />
+        <Link to="/react-books-library/search" />
       </div>
     </div>
   );
